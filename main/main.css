@@ -12,7 +12,74 @@
   padding: 0;
 }
 
+/* BM dohyeon 폰트 못찾음 폰트 찾아야함 */
+
 .slider{
+  width: 100%;
+  overflow: scroll;
+  height: 329px;
+  scroll-snap-type: x mandatory;
+  -ms-overflow-style: none;
+}
+.slider::-webkit-scrollbar {
+  display: none; 
+}
+.img-info{
+  margin: 213px 0 0 17px;
+}
+h1{
+  font-family: 'CWDangamAsac-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #FFFC54;
+}
+p{
+  margin-top: 10px;
+  font-family: 'BM Dohyeon';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 9.5px;
+  line-height: 19px;
+  /* or 200% */
+  letter-spacing: -0.908px;
+  color: #464646;
+}
+
+.building-img{
+  margin-top: 89px;
+  width: 217px;
+  height: 217px;
+}
+.info-circles{
+  position: absolute;
+  left: 50%;
+  top: 309px;
+  display: flex;
+  /* text-align: center; */
+}
+.circle{
+  margin-left:-50%;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  background-color: #000;
+  opacity: 0.2;
+}
+.circle:not(:first-child){
+  margin-left: 5px;
+}
+.banner-container{
+  height: 329px;
+  background-color: #01BEB1;
+  background-color: #000;
+  display: flex;
+}
+.img{
+  display: flex;
+  justify-content: space-between;
   height: 329px;
   background-color: #01BEB1;
 }
@@ -60,21 +127,39 @@ input:focus{
   height: 156px;
 }
 
-.social-sci{
+.map-contents{
   width: 150px;
   height: 156px;
   background-color: #eee;
   background: #10675B;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.natural-sci{
-  width: 150px;
-  height: 156px;
+h2{
+  font-family: 'CWDangamAsac-Bold';
+  font-style: normal;
+  font-weight: 700;
+}
+.map-contents-text{
+  margin-top: 14px;
+  font-size: 25px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #FFFC54;
+}
+.ginko{
+  width: 81px;
+  height: 81px;
+}
+#natural-sci{
   margin-left: 19px;
-  background-color: #eee;
-  background: #10675B;
-  border-radius: 30px;
+}
+.robot{
+  width: 81px;
+  height: 81px;
 }
 .con-bot{
   margin-top: 19px;
@@ -91,6 +176,10 @@ input:focus{
   background: #FDE461;
   border: 4px solid #10675B;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .alert-setting{
   background-color: #eee;
@@ -100,4 +189,32 @@ input:focus{
   background: #01BEB1;
   border: 4px solid #10675B;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h5{
+  font-family: 'Noto Sans Thai';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  letter-spacing: 0.092px;
+}
+.community-title{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 22px;
+  letter-spacing: -0.408px;
+  color: #10675B;
+}
+.community-text{
+  margin-top: -20px;
+  margin-left: -60px;
+  line-height: 30px;
+  color: #01BEB1;
+}
+.alert-text{
+  color: #10675B;
 }

@@ -13,6 +13,7 @@
 *{
   font-family: 'Noto Sans KR', sans-serif;
   margin: 0;
+  text-decoration: none;
   padding: 0;
 }
 
@@ -70,7 +71,6 @@ h1{
 .login-selection > a{
   margin-top: 9px;
   color: #464646;
-  text-decoration: none;
 }
 
 .input-cover{
@@ -123,7 +123,7 @@ input:focus{
   background-color:#01BEB1;
 }
 
-.start-btn > p{
+.start-btn > a > p{
   margin-top: 22px;
   font-family: 'Noto Sans Thai';
   font-style: normal;
