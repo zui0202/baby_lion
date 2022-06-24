@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'CWDangamAsac-Bold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/CWDangamAsac-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+*{
+  font-family: 'CWDangamAsac-Bold';
+  margin: 0;
+  text-decoration: none;
+  padding: 0;
+}
+body{
+  background: #01BEB1;
+}
+p{
+  height: 66px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 66px;
+  text-align: center;
+  letter-spacing: -0.408px;
+  color: #1D9C87;
+}
+p:nth-child(odd){
+  animation-duration: 8s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+}
+
+p:nth-child(2n){
+  animation-duration: 8s;
+  animation-name: slideout;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
+}
+@keyframes slidein {
+  from {
+    margin-left: 0%;
+    width: 300%
+  }
+
+  to {
+    margin-left: 100%;
+    width: 300%;
+  }
+}
+@keyframes slideout {
+  from {
+    margin-left: 0%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: -100%;
+    width: 300%
+  }
+}

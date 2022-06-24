@@ -24,6 +24,7 @@ BANNER.forEach((banner) => {
   
   const building_img = document.createElement("img");
   building_img.src = banner.img;
+  building_img.alt = "banner.img";
 
   img.appendChild(img_info);
   img.appendChild(building_img);
@@ -37,7 +38,7 @@ BANNER.forEach((banner) => {
 
 const IMG = document.querySelectorAll(".img");
 
-// 슬라이더 가로 길이 조절을 위해 구간 설정(반응형)
+// 슬라이더 가로 길이 조절을 위해 interval 설정(반응형)
 setInterval(() => {
   IMG.forEach((image)=>{
     image.style.width = `${SLIDER.offsetWidth}px`;
@@ -46,14 +47,14 @@ setInterval(() => {
 }, 10);
 
 
-// 페이지 리스트의 엘레먼트대로 인덱스써클 형성
+// 페이지의 엘레먼트대로 인덱스써클 형성
 IMG.forEach((image)=>{
   const CIRCLE = document.createElement("div");
   CIRCLE.classList.add("circle");
   CIRCLE_CONTAINER.appendChild(CIRCLE);
 })
 
-//DOM 추가
+//DOM에 추가
 const CIRCLES = document.querySelectorAll(".circle");
 
 const resetCircles = () => {
@@ -79,8 +80,11 @@ const changeDisplay = () => {
   });
   console.log(SLIDER.scrollLeft);
 }
+
+// every 5s change bannner 
 setInterval(() => {
   changeDisplay()
 }, 5000);
-// Event
+
+// Event Listener
 SLIDER.addEventListener("click", changeDisplay);
